@@ -1,0 +1,43 @@
+set nocompatible
+
+" Generic Editor Settings
+
+syntax on
+set number
+
+set smarttab
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set autoindent
+
+" Key Mapping
+let mapleader = "f"
+
+" tab nav
+map <leader>a :tabnew<cr>:e 
+map <Leader>s :tabclose<cr>
+map <Leader>d :-tabnext<cr>
+map <leader>f :+tabnext<cr>
+
+" saving
+map <leader>t :wq<cr>
+map <leader>g :w<cr>
+map <Leader>b :q<cr>
+
+" file nav
+map <Leader>r :0<cr>
+map <Leader>v :%<cr>
+
+" vimrc editing
+map <Leader>; :tabnew<cr>:e ~/.vimrc<cr>
+map <Leader>' :wq<cr>:so ~/.vimrc<cr>
+map <Leader>l imap <Leader> :\<cr\>
+
+" code commenting
+map <Leader>y A// TODO 
+map <Leader>u A// FIXME 
+map <Leader>i ^i//  
+
+" misc
+map q <Nop>

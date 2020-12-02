@@ -1,0 +1,21 @@
+# Vim Emulation for Shell
+
+set -o vi
+
+# Functions
+
+source ~/dotfiles/shell/functions.sh
+
+# Aliases
+
+source ~/dotfiles/shell/aliases.sh
+
+# Path
+
+export PATH=$PATH:~/.cargo/bin
+
+# Python Virtual Environment
+
+source /home/hank/.local/bin/virtualenvwrapper.sh
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export PROJECT_HOME=~/Documents/programming/python
