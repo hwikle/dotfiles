@@ -9,6 +9,8 @@ alias p="cd ~/Documents/programming/"
 alias v="vim"
 alias upgrade='sudo apt-get update && sudo apt-get upgrade'
 
+alias fd="fdfind"
+
 # System Information
 
 alias uname='uname -a'
